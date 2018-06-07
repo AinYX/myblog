@@ -1,0 +1,13 @@
+<!-- bose.html -->
+{% extends 'base.html' %}
+{% load markdown_deux_tags %}
+{% block title %}{{ post.title }} - 文学天地 {% endblock %}
+{% block headmessage %}
+  <h3>{{ post.title }}</h3>
+  <!--<a href="/">返回首页</a>-->
+{% endblock %}
+{% block content %}
+  <p>
+    <a>    {{ post.body | markdown }}</a>
+  </p>
+{% endblock %}
